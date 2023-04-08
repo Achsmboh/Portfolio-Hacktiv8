@@ -1,0 +1,78 @@
+h2 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  background: #34353a;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+
+/* For Dekstop View */
+@media screen and (min-width: 1024px) {
+  body {
+    background: #34353a;
+  }
+}
+
+/* Awal Navbar */
+.navbar {
+  height: 80px;
+  background: #34353a;
+  padding: 0px 100px 0 100px;
+  display: flex;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-color: #ffca6c;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar-in {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#nama {
+  font-size: 32px;
+  color: #ffca6c;
+}
+
+.menu {
+  display: flex;
+  font-size: 16px;
+  gap: 35px;
+}
+
+.list-menu {
+  padding: 15px 0 15px 0;
+}
+
+.list-menu :hover {
+  animation: normal;
+  border-bottom-style: solid;
+  border-bottom-color: #ffca6c;
+}
+/* Akhir Navbar */
+
+/* Awal Home */
+#home {
+  margin: 80px 0 0 0;
+  height: 1000px;
+}
+/* Akhir Home */
