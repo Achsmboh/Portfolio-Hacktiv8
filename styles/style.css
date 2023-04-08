@@ -218,7 +218,7 @@ ul {
 }
 .organisasi {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   margin: 0;
 }
 .description {
@@ -226,3 +226,36 @@ ul {
   margin-top: 16px;
 }
 /* Akhir Experience */
+
+/* Awal Education */
+#education {
+  height: 400px;
+  background: #34353a;
+  padding: 0 100px 0 100px;
+  display: flex;
+  align-items: center;
+}
+.education-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 32px;
+}
+.simbol-1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.line {
+  height: 5px;
+  border-bottom-style: dashed;
+  border-bottom-color: #cdcdcd;
+  width: 80%;
+  margin-bottom: 2px;
+}
+.education-content {
+  width: 100%;
+}
+/* Akhir Education */
