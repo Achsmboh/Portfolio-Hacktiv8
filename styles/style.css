@@ -268,7 +268,7 @@ ul {
 #skills {
   background: #34353a;
   height: 800px;
-  padding: 0 100px 0 100px;
+  padding: 10px 100px 0 100px;
   display: flex;
   align-items: center;
 }
@@ -313,7 +313,7 @@ div .kotak-logo:hover {
   height: 500px;
   display: flex;
   align-items: center;
-  padding: 0 100px 0 100px;
+  padding: 40px 100px 0 100px;
 }
 .w-full {
   width: 100%;
@@ -357,7 +357,7 @@ div .kotak-logo:hover {
 /* Awal Award */
 #award {
   background: #34353a;
-  padding: 0 100px 0 100px;
+  padding: 40px 100px 0 100px;
   height: 600px;
   display: flex;
   align-items: center;
@@ -383,3 +383,124 @@ img.piala {
   opacity: 0.5;
 }
 /* Akhir Award */
+
+/* Awal Portfolio */
+#portfolio {
+  height: 1098px;
+  background: #34353a;
+  padding: 40px 100px 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.title-portfolio {
+  text-align: center;
+}
+
+.container-portfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.container-portfolio2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.card-portfolio {
+  background: black;
+  width: 390px;
+  height: 522px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-portfolio:hover {
+  transform: scale(1.1);
+  z-index: 0;
+  position: relative;
+  transition: all;
+  border-radius: 10px;
+}
+.card-portfolio2 {
+  background: black;
+  width: 600px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-portfolio2:hover {
+  transform: scale(1.1);
+  z-index: 0;
+  position: relative;
+  transition: all;
+  border-radius: 10px;
+}
+
+.achsmovie {
+  background-image: url(/assets/achsmovie.png);
+}
+.pokemon {
+  background-image: url(/assets/pokemon.png);
+}
+.achsnews {
+  background-image: url(/assets/achsnews.png);
+}
+
+.ecommerce {
+  background-image: url(/assets/ecomerce.png);
+}
+
+.airbnb {
+  background-image: url(/assets/airbnb.png);
+}
+
+.content-portfolio {
+  width: 250px;
+  text-align: center;
+}
+.content-portfolio2 {
+  width: 377px;
+  text-align: center;
+}
+.see-more {
+  background: #ffca6c;
+  border: none;
+  width: 150px;
+  height: 46px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  background: #cdcdcd;
+  color: #34353a;
+  font-weight: bold;
+}
+
+.view-more {
+  background: #ffca6c;
+  width: 250px;
+  height: 46px;
+  border: none;
+  border-radius: 5px;
+}
+
+.view-more:hover {
+  background: #cdcdcd;
+  font-weight: bold;
+}
+
+.button-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.layout-portfolio {
+  display: flex;
+}
+/* Akhir Portfolio */
