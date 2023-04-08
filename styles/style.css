@@ -554,3 +554,27 @@ img.piala {
   justify-content: center;
 }
 /* Akhir Contact */
+
+/* Awal Footer */
+#footer {
+  background: #34353a;
+  height: 208px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thanks {
+  color: #ffca6c;
+  font-size: 32px;
+  text-align: center;
+}
+.footer {
+  background: #ffca6c;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+/* Akhir Foter */
