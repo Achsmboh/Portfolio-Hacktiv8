@@ -140,3 +140,31 @@ ul {
   margin-bottom: 20px;
 }
 /* Akhir Home */
+
+/* Awal About */
+#about {
+  height: 363px;
+  padding: 0 100px 0 100px;
+  display: flex;
+  align-items: center;
+}
+.garis-horizontal {
+  background: #ffca6c;
+  height: 5px;
+  width: 100px;
+  margin-top: 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: start;
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.about-desc {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+/* Akhir About */
