@@ -302,3 +302,51 @@ div .kotak-logo:hover {
   align-items: center;
 }
 /* Akhir Skills */
+
+/* Awal Interest */
+#interest {
+  background: #34353a;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px 0 100px;
+}
+.w-full {
+  width: 100%;
+}
+.card-interest {
+  background: #3d3e42;
+  height: 311px;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.interest-simbol {
+  font-size: 64px;
+  margin: 0;
+  padding: 0;
+}
+
+.content-interest {
+  width: 1108px;
+}
+.button-more {
+  height: 46px;
+  width: 200px;
+  background: #ffca6c;
+  border-radius: 5px;
+  border: none;
+}
+.button-more:hover {
+  background: #5d5e61;
+}
+.end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+/* Akhir Interest */
