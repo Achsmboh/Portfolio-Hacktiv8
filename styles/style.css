@@ -259,3 +259,46 @@ ul {
   width: 100%;
 }
 /* Akhir Education */
+
+/* Awal Skills */
+#skills {
+  background: #34353a;
+  height: 800px;
+  padding: 0 100px 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.title-skills {
+  text-align: center;
+}
+.container-skills {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 32px;
+}
+.kotak-logo {
+  background: #3d3e42;
+  width: 267px;
+  height: 267px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div .kotak-logo:hover {
+  background: #ffca6c;
+  color: #34353a;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Akhir Skills */
