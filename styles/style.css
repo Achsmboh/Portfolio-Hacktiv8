@@ -504,3 +504,53 @@ img.piala {
   display: flex;
 }
 /* Akhir Portfolio */
+/* Awal Contact */
+#contact {
+  height: 264px;
+  background: #3d3e42;
+  padding: 0 100px 0 100px;
+  border-top-style: solid;
+  border-top-color: #ffca6c;
+  border-bottom-style: solid;
+  border-bottom-color: #ffca6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-contact {
+  text-align: center;
+}
+
+.kotak-contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #34353a;
+  width: fit-content;
+  height: 46px;
+  padding: 0 10px 0 10px;
+  color: #ffca6c;
+}
+.bungkus {
+  display: flex;
+  gap: 22px;
+  width: 100%;
+  justify-content: center;
+  color: #ffca6c;
+  margin-top: 32px;
+}
+.kotak-akhir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  width: 100%;
+}
+.medsos2 {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  justify-content: center;
+}
+/* Akhir Contact */
