@@ -4,6 +4,12 @@ h2 {
   font-size: 45px;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
 body,
 html,
 section {
@@ -168,3 +174,55 @@ ul {
   font-size: 20px;
 }
 /* Akhir About */
+
+/* Awal Experience */
+#experience {
+  background: #3d3e42;
+  padding: 92px 100px 32px 100px;
+}
+
+.experience-flex {
+  display: flex;
+  gap: 35px;
+  margin-top: 32px;
+}
+
+.kotak {
+  width: 80px;
+  height: 40px;
+  background: #5d5e61;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cyrcle {
+  background: #ffca6c;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+.line-vertikal {
+  background: #cdcdcd;
+  width: 5px;
+  height: 80%;
+}
+
+.simbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+}
+.organisasi {
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0;
+}
+.description {
+  font-size: 20px;
+  margin-top: 16px;
+}
+/* Akhir Experience */
