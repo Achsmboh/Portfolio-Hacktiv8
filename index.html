@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dekstop.css" />
+    <link rel="stylesheet" href="styles/tablet.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,38 +15,40 @@
   </head>
   <body>
     <!-- Awal Navbar -->
-    <nav class="navbar">
-      <div class="navbar-in">
-        <div id="nama">
-          <h2>
-            <a href="#home"> Achsan.</a>
-          </h2>
-        </div>
-        <div>
-          <ul class="menu">
-            <li class="list-menu">
-              <a href="#about">About</a>
-            </li>
-            <li class="list-menu">
-              <a href="#experience">Experience</a>
-            </li>
-            <li class="list-menu">
-              <a href="#education">Education</a>
-            </li>
-            <li class="list-menu">
-              <a href="#skills">Skills</a>
-            </li>
-            <li class="list-menu">
-              <a href="#interest">Interest</a>
-            </li>
-            <li class="list-menu">
-              <a href="#award">Award</a>
-            </li>
-            <li class="list-menu">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
+    <nav>
+      <div id="nama">
+        <h2>
+          <a href="#home"> Achsan.</a>
+        </h2>
+      </div>
+      <ul>
+        <li class="list-menu">
+          <a href="#about">About</a>
+        </li>
+        <li class="list-menu">
+          <a href="#experience">Experience</a>
+        </li>
+        <li class="list-menu">
+          <a href="#education">Education</a>
+        </li>
+        <li class="list-menu">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="list-menu">
+          <a href="#interest">Interest</a>
+        </li>
+        <li class="list-menu">
+          <a href="#award">Award</a>
+        </li>
+        <li class="list-menu">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+      </ul>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
     <!-- Akhir Navbar -->
@@ -59,14 +64,14 @@
         </button>
       </div>
       <div class="image">
-        <img src="/assets/image.png" alt="foto-achmadmaulanacshsan" />
+        <img class="achmad" src="/assets/image.png" alt="foto-achmadmaulanacshsan" />
         <ul class="medsos">
           <li>
             <div class="garis-vertikal"></div>
           </li>
           <li>
             <a href="https://web.facebook.com/achmadmaulanaachsan">
-              <img src="assets/icon-fb.png" alt="facebook" />
+              <img class="icon" src="assets/icon-fb.png" alt="facebook" />
             </a>
           </li>
           <li>
@@ -115,7 +120,7 @@
             <div class="cyrcle"></div>
             <div class="line-vertikal"></div>
           </div>
-          <div>
+          <div class="desc-exp">
             <h3>Belajar Langkah Fundamental Untuk Menjadi Web Programmer</h3>
             <p class="organisasi">Kartu Prakerja - Hactiv8</p>
             <p class="description">
@@ -133,7 +138,7 @@
             <div class="cyrcle"></div>
             <div class="line-vertikal"></div>
           </div>
-          <div>
+          <div class="desc-exp">
             <h3>Junior Web Developer Program Vocational School Graduate Academy</h3>
             <p class="organisasi">Kominfo - Digital Talent Scholarship</p>
             <p class="description">
@@ -150,7 +155,7 @@
             <div class="cyrcle"></div>
             <div class="line-vertikal"></div>
           </div>
-          <div>
+          <div class="desc-exp">
             <h3>Project-Based Intern: Frontend Virtual Intership Experience Core Initiative as Frontend</h3>
             <p class="organisasi">Core Initiative Studio - Intership</p>
             <p class="description">
@@ -166,7 +171,7 @@
             <div class="cyrcle"></div>
             <div class="line-vertikal"></div>
           </div>
-          <div>
+          <div class="desc-exp">
             <h3>Belajar Dasar Pemrograman JavaScript</h3>
             <p class="organisasi">Dicoding Indonesia - Online</p>
             <p class="description">Become a Web Developer using Node.js technology using industry competency standards validated by AWS, successfully mastering basic JavaScript for developing web applications using Node.Js.</p>
@@ -206,8 +211,9 @@
             <p>2014 - 2017</p>
           </div>
           <div>
-            <div class="simbol-1">
+            <div class="simbol-1 univ">
               <div class="cyrcle"></div>
+              <div class="line" id="line"></div>
             </div>
             <p class="organisasi">Universitas Negeri Yogyakarta</p>
             <p>2017 - 2022</p>
@@ -414,5 +420,6 @@
     <div class="footer">
       <p>2023 &#169; achmadmaulanaachsan</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

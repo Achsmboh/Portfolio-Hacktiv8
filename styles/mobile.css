@@ -1,0 +1,221 @@
+/* Responsive Breakpoint */
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  /* Awal Navbar */
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #3d3e42;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-evenly;
+    z-index: 999;
+    align-items: center;
+    padding: 0;
+    width: 80%;
+    transform: translate(100%);
+    opacity: 0;
+    margin: 1px;
+    transition: all 1s;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translate(0);
+    transition: all 1s;
+  }
+  nav {
+    background: #3d3e42;
+    box-shadow: 0 0 2px 0 #ffca6c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 4em;
+  }
+  /* Akhir Navbar */
+  /* Awal Home */
+  #home {
+    position: relative;
+    z-index: -1;
+    padding: 5em 1.5em 1.5em 1.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+    width: 100%;
+  }
+  .welcome {
+    font-size: 1em;
+    height: 1.8em;
+    width: 8em;
+  }
+  .profesi {
+    font-size: 1em;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .achmad {
+    width: 15em;
+    height: 15em;
+    object-fit: contain;
+    border-radius: 100%;
+  }
+  .medsos {
+    align-items: center;
+    width: fit-content;
+    gap: 0.3em;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .garis-vertikal {
+    height: 2em;
+    margin-bottom: 1em;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  li a img {
+    width: 1em;
+    height: 1em;
+  }
+  .contact {
+    border-width: 0.05em;
+    width: 7em;
+    height: 2em;
+    border-radius: 0.2em;
+    font-size: 0.9em;
+    margin-top: 1em;
+  }
+  /* Akhir Home */
+  /* Awal About */
+  #about {
+    padding: 1.5em 1.5em;
+    width: 100%;
+  }
+  .garis-horizontal {
+    background: #ffca6c;
+    height: 0.1em;
+    width: 15%;
+    margin: 0 0 0.6em 0;
+  }
+  /* Akhir About */
+  /* Awal Experience */
+  #experience {
+    padding: 1.5em;
+    width: 100%;
+  }
+  .experience-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 32px;
+  }
+  .simbol {
+    display: none;
+  }
+  .desc-exp h3 {
+    font-size: 1.6em;
+  }
+  .desc-exp p {
+    font-size: 0.9em;
+  }
+  .cyrcle {
+    background: #ffca6c;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+  }
+  /* Akhir Experience */
+  /* Awal Education */
+  #education {
+    background: #34353a;
+    padding: 1.5em;
+    width: 100%;
+  }
+  .line {
+    width: 100%;
+  }
+  /* Akhir Education */
+  /* Awal Skills */
+  #skills {
+    padding: 1.5em;
+    width: 100%;
+  }
+  .kotak-logo {
+    background: #3d3e42;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .logo p {
+    font-size: 10px;
+  }
+  .container-skills {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  /* Akhir Skills */
+  /* Awal Interest */
+  #interest {
+    width: 100%;
+    padding: 1.5em;
+  }
+  .card-interest {
+    border-radius: 18px;
+    margin-top: 32px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .content-interest {
+    width: 80%;
+    height: 60%;
+  }
+  /* Akhir Interest */
+  /* Awal Award */
+  #award {
+    padding: 40px 1.5em 0 1.5em;
+    height: fit-content;
+    width: 100%;
+  }
+  img.piala {
+    width: 300px;
+  }
+  /* Akhir Award */
+  /* Awal Portfolio */
+  #portfolio {
+    display: none;
+  }
+  /* Akhir Portfolio */
+  /* Awal Contact */
+  #contact {
+    display: none;
+  }
+  /* Akhir Contact */
+  /* Awal Footer */
+  #footer {
+    display: none;
+  }
+  /* Akhir Footer */
+}

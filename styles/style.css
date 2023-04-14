@@ -1,7 +1,10 @@
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 45px;
+}
+
+h2 a {
+  font-size: 30px;
 }
 
 h3 {
@@ -22,7 +25,8 @@ body {
   font-family: "Roboto Slab", serif;
   color: white;
   background: #34353a;
-  overflow: auto;
+  /* overflow: auto; */
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -32,50 +36,70 @@ ul {
   list-style-type: none;
 }
 
-/* For Dekstop View */
-@media screen and (min-width: 1024px) {
-  body {
-    background: #34353a;
-  }
+/* Hamburger Menu */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  display: none;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -9.9px;
+  top: -3.2px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+  z-index: 10;
 }
 
 /* Awal Navbar */
-.navbar {
-  height: 80px;
-  background: #34353a;
-  padding: 0px 100px 0 100px;
+#nama {
   display: flex;
-  align-items: center;
-  /* border-bottom-style: solid;
-  border-bottom-color: #ffca6c; */
-  box-shadow: 0 0 2px 0 #ffca6c;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-}
-.navbar-in {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #nama a {
   font-size: 32px;
   color: #ffca6c;
+  letter-spacing: 03px;
 }
-
-.menu {
-  display: flex;
-  font-size: 16px;
-  gap: 35px;
+nav ul a:hover {
+  color: #ffca6c;
 }
-
 .list-menu {
   padding: 15px 0 15px 0;
 }
-
 .list-menu :hover {
   animation: normal;
   border-bottom-style: solid;
@@ -85,141 +109,90 @@ ul {
 
 /* Awal Home */
 #home {
-  padding: 90px 100px 0 100px;
-  height: 900px;
   background: #34353a;
   border-bottom-style: solid;
   border-bottom-color: #ffca6c;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .welcome {
   background: #ffca6c;
   color: #34353a;
-  font-size: 32px;
-  height: 46px;
-  width: 250px;
-  border-radius: 5px;
+
+  border-radius: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 16px;
-}
-.profesi {
-  font-size: 20px;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .contact {
   background: transparent;
   border: solid;
   border-color: #ffca6c;
+}
+
+button.contact a {
   color: #ffca6c;
-  border-width: 4px;
-  width: 250px;
-  height: 60px;
-  border-radius: 10px;
-  font-size: 32px;
-  margin-top: 32px;
 }
 
 .contact:hover {
   background: #ffca6c;
 }
 
-.image {
-  display: flex;
-  align-items: end;
-  height: 100%;
-}
 .medsos {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-  margin-bottom: 32px;
+}
+.medsos li {
+  text-align: center;
 }
 .garis-vertikal {
   background: #ffca6c;
-  width: 5px;
-  height: 150px;
-  margin-bottom: 20px;
+  width: 0.1em;
 }
 /* Akhir Home */
 
 /* Awal About */
 #about {
-  height: 363px;
-  padding: 0 100px 0 100px;
   display: flex;
   align-items: center;
 }
-.garis-horizontal {
-  background: #ffca6c;
-  height: 5px;
-  width: 100px;
-  margin-top: 5px;
-}
-
 .flex {
-  display: flex;
   align-items: start;
   gap: 22px;
-  margin-top: 18px;
 }
-
 .about-desc {
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 1em;
 }
 /* Akhir About */
 
 /* Awal Experience */
 #experience {
   background: #3d3e42;
-  padding: 92px 100px 32px 100px;
 }
-
-.experience-flex {
-  display: flex;
-  gap: 35px;
-  margin-top: 32px;
-}
-
 .kotak {
   width: 80px;
   height: 40px;
   background: #5d5e61;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cyrcle {
-  background: #ffca6c;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-}
+
 .line-vertikal {
   background: #cdcdcd;
   width: 5px;
   height: 80%;
 }
 
-.simbol {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  height: auto;
-}
 .organisasi {
   font-weight: bold;
   font-size: 24px;
@@ -233,18 +206,11 @@ ul {
 
 /* Awal Education */
 #education {
-  height: 400px;
   background: #34353a;
-  padding: 0 100px 0 100px;
   display: flex;
   align-items: center;
 }
-.education-list {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 32px;
-}
+
 .simbol-1 {
   display: flex;
   align-items: center;
@@ -256,8 +222,8 @@ ul {
   height: 5px;
   border-bottom-style: dashed;
   border-bottom-color: #cdcdcd;
-  width: 80%;
   margin-bottom: 2px;
+  width: 80%;
 }
 .education-content {
   width: 100%;
@@ -267,8 +233,6 @@ ul {
 /* Awal Skills */
 #skills {
   background: #34353a;
-  height: 800px;
-  padding: 10px 100px 0 100px;
   display: flex;
   align-items: center;
 }
@@ -276,30 +240,12 @@ ul {
 .title-skills {
   text-align: center;
 }
-.container-skills {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 32px;
-  margin-top: 32px;
-}
-.kotak-logo {
-  background: #3d3e42;
-  width: 267px;
-  height: 267px;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 div .kotak-logo:hover {
   background: #ffca6c;
   color: #34353a;
   font-weight: bold;
 }
-
 .logo {
   display: flex;
   flex-direction: column;
@@ -310,23 +256,18 @@ div .kotak-logo:hover {
 /* Awal Interest */
 #interest {
   background: #34353a;
-  height: 500px;
   display: flex;
   align-items: center;
-  padding: 40px 100px 0 100px;
 }
 .w-full {
   width: 100%;
 }
 .card-interest {
   background: #3d3e42;
-  height: 311px;
   width: 100%;
-  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
 }
 
 .interest-simbol {
@@ -335,9 +276,6 @@ div .kotak-logo:hover {
   padding: 0;
 }
 
-.content-interest {
-  width: 1108px;
-}
 .button-more {
   height: 46px;
   width: 200px;
@@ -357,12 +295,9 @@ div .kotak-logo:hover {
 /* Awal Award */
 #award {
   background: #34353a;
-  padding: 40px 100px 0 100px;
-  height: 600px;
   display: flex;
   align-items: center;
 }
-
 .card-award {
   background: #3d3e42;
   width: 400px;
@@ -370,7 +305,6 @@ div .kotak-logo:hover {
   border-radius: 25px;
   margin-top: 32px;
 }
-
 .container-card {
   display: flex;
   justify-content: center;
@@ -378,7 +312,6 @@ div .kotak-logo:hover {
   width: 100%;
   text-align: center;
 }
-
 img.piala {
   opacity: 0.5;
 }
@@ -386,9 +319,7 @@ img.piala {
 
 /* Awal Portfolio */
 #portfolio {
-  height: 1098px;
   background: #34353a;
-  padding: 40px 100px 0 100px;
   display: flex;
   align-items: center;
 }
@@ -410,8 +341,6 @@ img.piala {
 
 .card-portfolio {
   background: black;
-  width: 390px;
-  height: 522px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,8 +354,6 @@ img.piala {
 }
 .card-portfolio2 {
   background: black;
-  width: 600px;
-  height: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,19 +385,14 @@ img.piala {
 }
 
 .content-portfolio {
-  width: 250px;
   text-align: center;
 }
 .content-portfolio2 {
-  width: 377px;
   text-align: center;
 }
 .see-more {
   background: #ffca6c;
   border: none;
-  width: 150px;
-  height: 46px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -482,8 +404,6 @@ img.piala {
 
 .view-more {
   background: #ffca6c;
-  width: 250px;
-  height: 46px;
   border: none;
   border-radius: 5px;
 }
@@ -497,7 +417,6 @@ img.piala {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
 }
 
 .layout-portfolio {
@@ -513,7 +432,8 @@ img.piala {
   border-top-color: #ffca6c;
   border-bottom-style: solid;
   border-bottom-color: #ffca6c;
-  display: flex;
+  /* display: flex; */
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -559,7 +479,8 @@ img.piala {
 #footer {
   background: #34353a;
   height: 208px;
-  display: flex;
+  /* display: flex; */
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -572,6 +493,7 @@ img.piala {
   background: #ffca6c;
   height: 30px;
   display: flex;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   color: black;
