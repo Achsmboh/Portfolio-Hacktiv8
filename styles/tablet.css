@@ -168,28 +168,34 @@
   /* Akhir Award */
   /* Awal Portfolio */
   #portfolio {
-    display: none;
+    display: flex;
     height: 1098px;
     padding: 40px 50px 0 50px;
+    font-size: medium;
+  }
+  .judul-port {
+    font-size: larger;
   }
   .card-portfolio {
     width: 180px;
     height: auto;
     object-fit: contain;
+    border-radius: 5px;
   }
   .card-portfolio2 {
-    background: black;
+    border-radius: 5px;
   }
   .content-portfolio {
     width: 250px;
   }
   .content-portfolio2 {
-    width: 377px;
+    width: 300px;
   }
   .see-more {
     width: 150px;
-    height: 46px;
+    height: 40px;
     border-radius: 5px;
+    margin-bottom: 5px;
   }
   .view-more {
     width: 250px;
@@ -202,7 +208,7 @@
   /* Akhir Portfolio */
   /* Awal Contact */
   #contact {
-    display: none;
+    display: flex;
   }
   /* Akhir Contact */
   /* Awal Footer */
