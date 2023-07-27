@@ -101,8 +101,8 @@
   /* Akhir Home */
   /* Awal About */
   #about {
-    padding: 1.5em 1.5em;
-    width: 100%;
+    padding: 1.5em;
+    width: 90%;
   }
   .garis-horizontal {
     background: #ffca6c;
@@ -114,7 +114,7 @@
   /* Awal Experience */
   #experience {
     padding: 1.5em;
-    width: 100%;
+    width: 90%;
   }
   .experience-flex {
     display: flex;
@@ -142,16 +142,16 @@
   #education {
     background: #34353a;
     padding: 1.5em;
-    width: 100%;
+    width: 90%;
   }
   .line {
-    width: 100%;
+    width: 90%;
   }
   /* Akhir Education */
   /* Awal Skills */
   #skills {
     padding: 1.5em;
-    width: 100%;
+    width: 90%;
   }
   .kotak-logo {
     background: #3d3e42;
@@ -179,7 +179,7 @@
   /* Akhir Skills */
   /* Awal Interest */
   #interest {
-    width: 100%;
+    width: 90%;
     padding: 1.5em;
   }
   .card-interest {
@@ -197,7 +197,7 @@
   #award {
     padding: 40px 1.5em 0 1.5em;
     height: fit-content;
-    width: 100%;
+    width: 90%;
   }
   img.piala {
     width: 300px;
@@ -205,17 +205,86 @@
   /* Akhir Award */
   /* Awal Portfolio */
   #portfolio {
-    display: none;
+    display: flex;
+    font-size: medium;
+    width: 90%;
+    padding: 1.5em;
   }
+  .container-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-portfolio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .judul-port {
+    font-size: large;
+  }
+
+  .card-portfolio {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  .card-portfolio2 {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  .content-portfolio {
+    width: 250px;
+  }
+  .content-portfolio2 {
+    width: 100%;
+  }
+  .see-more {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .view-more {
+    width: 250px;
+    height: 46px;
+    border-radius: 5px;
+  }
+  .button-view {
+    margin-top: 32px;
+  }
+
   /* Akhir Portfolio */
   /* Awal Contact */
   #contact {
-    display: none;
+    display: flex;
+    padding: 1.5;
+    height: 350px;
+  }
+  .bungkus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .kotak-contact {
+    width: 100%;
+  }
+  .kotak-akhir {
+    width: 100%;
+  }
+  .title-contact {
+    margin-top: 50px;
   }
   /* Akhir Contact */
   /* Awal Footer */
   #footer {
-    display: none;
+    display: flex;
   }
   /* Akhir Footer */
 }
