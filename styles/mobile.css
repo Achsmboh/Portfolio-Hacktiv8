@@ -264,9 +264,8 @@
   #contact {
     display: flex;
     padding: 1.5;
-    width: 100%;
-    font-size: small;
     width: 115%;
+    font-size: small;
     height: 350px;
   }
   .title-contact {
@@ -290,6 +289,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 115%;
+  }
+  .footer {
+    width: 115%;
   }
   /* Akhir Footer */
 }

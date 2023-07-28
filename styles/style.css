@@ -488,7 +488,6 @@ img.piala {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 115%;
 }
 .thanks {
   color: #ffca6c;
@@ -504,6 +503,5 @@ img.piala {
   align-items: center;
   color: black;
   font-weight: bold;
-  width: 115%;
 }
 /* Akhir Foter */
