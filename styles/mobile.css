@@ -114,7 +114,7 @@
   /* Awal Experience */
   #experience {
     padding: 1.5em;
-    width: 90%;
+    width: 100%;
   }
   .experience-flex {
     display: flex;
@@ -142,16 +142,16 @@
   #education {
     background: #34353a;
     padding: 1.5em;
-    width: 90%;
+    width: 100%;
   }
   .line {
-    width: 90%;
+    width: 100%;
   }
   /* Akhir Education */
   /* Awal Skills */
   #skills {
     padding: 1.5em;
-    width: 90%;
+    width: 100%;
   }
   .kotak-logo {
     background: #3d3e42;
@@ -179,7 +179,7 @@
   /* Akhir Skills */
   /* Awal Interest */
   #interest {
-    width: 90%;
+    width: 100%;
     padding: 1.5em;
   }
   .card-interest {
@@ -197,7 +197,7 @@
   #award {
     padding: 40px 1.5em 0 1.5em;
     height: fit-content;
-    width: 90%;
+    width: 100%;
   }
   img.piala {
     width: 300px;
@@ -207,7 +207,7 @@
   #portfolio {
     display: flex;
     font-size: medium;
-    width: 90%;
+    width: 100%;
     padding: 1.5em;
   }
   .container-portfolio {
@@ -264,15 +264,18 @@
   #contact {
     display: flex;
     padding: 1.5;
+    width: 100%;
+    font-size: small;
+    width: 115%;
     height: 350px;
+  }
+  .title-contact {
+    font-size: x-large;
   }
   .bungkus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-  }
-  .kotak-contact {
     width: 100%;
   }
   .kotak-akhir {
@@ -285,6 +288,8 @@
   /* Awal Footer */
   #footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /* Akhir Footer */
 }

@@ -283,6 +283,11 @@ div .kotak-logo:hover {
   border-radius: 5px;
   border: none;
 }
+
+.button-more a {
+  color: black;
+}
+
 .button-more:hover {
   background: #5d5e61;
 }
@@ -427,7 +432,7 @@ img.piala {
 #contact {
   height: 264px;
   background: #3d3e42;
-  padding: 0 100px 0 100px;
+  /* padding: 0 100px 0 100px; */
   border-top-style: solid;
   border-top-color: #ffca6c;
   border-bottom-style: solid;
@@ -483,6 +488,7 @@ img.piala {
   display: none;
   justify-content: center;
   align-items: center;
+  width: 115%;
 }
 .thanks {
   color: #ffca6c;
@@ -498,5 +504,6 @@ img.piala {
   align-items: center;
   color: black;
   font-weight: bold;
+  width: 115%;
 }
 /* Akhir Foter */
