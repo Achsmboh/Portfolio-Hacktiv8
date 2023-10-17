@@ -167,9 +167,15 @@
   }
   /* Akhir Award */
   /* Awal Portfolio */
+  .container-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
   #portfolio {
     display: flex;
-    height: 1098px;
+    height: auto;
     padding: 40px 50px 0 50px;
     font-size: medium;
   }
@@ -203,7 +209,7 @@
     border-radius: 5px;
   }
   .button-view {
-    margin-top: 32px;
+    margin: 32px 0 32px 0;
   }
   /* Akhir Portfolio */
   /* Awal Contact */

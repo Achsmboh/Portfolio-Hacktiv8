@@ -371,6 +371,14 @@ img.piala {
   border-radius: 10px;
 }
 
+.perpus-app {
+  background-image: url(/assets/perpus-app.png);
+}
+
+.notes-app {
+  background-image: url(/assets/notes-app.png);
+}
+
 .achsmovie {
   background-image: url(/assets/achsmovie.png);
 }
